@@ -17,13 +17,12 @@ Before you can use the script you will need to install the [OleFileIO_PL](https:
 ./punbup.py 7dea15dd393591.bup
 ```
 
-<br>
+
 * Extract all files from 7dea15dd393591.bup to folder 7dea15dd393591/ and rename files to their original names (their file names as noted when they were quarantined).
 
 ```
 ./punbup.py -o 7dea15dd393591.bup
 ```
-<br>
 
 
 * Print the contents of the Details file to stdout. Don't extract any files (disk won't be written to).
