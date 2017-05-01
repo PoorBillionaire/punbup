@@ -18,6 +18,7 @@ Before you can use the script you will need to install the [OleFileIO_PL](https:
 ```
 <br>
 * Extract all files from 7dea15dd393591.bup to folder 7dea15dd393591/ and rename files to their original names (their file names as noted when they were quarantined).
+
 ```
 ./punbup.py -o 7dea15dd393591.bup
 ```
@@ -31,6 +32,7 @@ Before you can use the script you will need to install the [OleFileIO_PL](https:
 ```
 
 ## Usage
+
 ```
 usage: punbup.py [-h] [-d] [-o] infile
 
@@ -51,13 +53,13 @@ optional arguments:
   -c {md5,sha1,sha256}, --hash {md5,sha1,sha256}
                   Calculates the hash for all of the files in the bup.
 ```                  
+
 ## Features
 
 ### Fully Implemented
 In addition to extracting files from a .bup file the script has the option to rename the files to their original name (instead of File_0, File_1, etc).<br><br> 
 The script also provides an option to just print the Details file and not extract any files. This allows an analyst to quickly investigate a bup file without having to extract anything to disk (very helpful in some environments).<br><br>
 The script should be fully platform independent. It has been tested and confirmed on some versions of Linux, Windows, OSX. 
-
 
 ### Future
 If you take a look at the script you will see that there is a Details file parser that can be used to extract the .bup Details file into a dictionary. This dictionary is used to implement some features in the script but it has real potential to be extended. Stay tuned! 
